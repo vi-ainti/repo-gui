@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.center{
+    width: 1140px;
+    margin: 0 auto; /*сверху-снизу отступ 0, по краям автомтический*/
+    outline: 1px solid red;/*подсветить границу центровщика, потом удалить. используется вместо border, чтобы не отнимать рабочие пиксели*/
+    background-color: rgb(235, 161, 152);/*подсветить границу центровщика, потом удалить.*/
+}
+.header{
+    background-color: #222222;
+    padding: 18px 0;/*можно отдельно использовать отступ сверху и снизу, это оптимизация*/
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-link{
+    margin-right: 41px;
+}
+.profile-link {
+    margin: 0 33px;
+}
+
+.intro {
+    background-color: #F1E4E6;
+}
+.intro-wrap {
+background-image: url(../image/intro.png);
+background-repeat: no-repeat;
+height: 764px;
+background-position: -227px bottom;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-bottom: 65px;
+}
+.heder-intro {
+    color: #222222;
+width: 405px;
+border-left: 12px solid #F16D7F;
+padding-left: 15px;
+margin-right: 90px;
+}
+.heder-intro-first {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+.heder-intro-second {
+    font-weight: Bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+.heder-intro-pink {
+    color: #F16D7F;
+
+}
+.categories-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+    /* gap: 30px;   можно использовать для отступов, но не все браузеры поддержат*/
+}
+.categories-item {
+    width: 360px;
+    height: 260px;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.category-women {
+    background-image: url(../image/category_female.png);
+}
+.category-man {
+background-image: url(../image/category_male.png);
+}
+.category-kids {
+background-image: url(../image/category_kids.png);
+}
+.category-accesories {
+    margin-top: 30px;
+    flex-grow: 1;
+    height: 180px;
+    background-image: url(../image/category_acc.png);
+}
+.categories-title-first {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;    
+    line-height: 29px;
+    line-height: 29px;
+}
+.categories-title-second {
+    color: #F16D7F;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    line-height: 29px;
+}
+.products-intro {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+}
+.products-title {
+    color: #222222;
+    font-size: 30px;
+    line-height: 19px;
+}
+.products-description {
+    margin-top: 6px;
+    color: #9F9F9F;
+    font-size: 14px;
+    line-height: 17px;
+}
+.products-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*gap: 30px;*/
+}
+.product {
+    width: 360px;
+   background: #F8F8F8;
+   margin-top: 30px;
+}
+.product-card {
+    margin: 24px 29px 20px 17px;
+    font-style: normal;
+}
+.product-title {
+    color: #000000;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.product-text{
+    margin-top: 12px;
+    color: #5D5D5D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.product-price {
+    margin-top: 18px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.product-tap{
+    display: flex;
+    justify-content: center;
+}
+.product-link {
+    margin-top: 48px;
+    color: #F26376;
+    display: inline-block;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 40px;
+    width: 212px;
+    text-decoration: none;
+    }
+    .privilege{
+    background-color: #222224;
+    margin-top: 95px;
+    padding-top: 103px;
+}
+.privilege-item {
+
+}
+.feedback {
+	background-image: url(../image/feedback_bck.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 448px;
+}
+.subscride {
+    display: flex;
+}
+.subscribe-field {
+padding: 7px 22px;
+background: #E1E1E1;
+border: none;
+border-top-left-radius: 25px;
+}
+.subscribe-field::placeholder {
+	color: #222224;
+	font-family: 'Lato', sans-serif;
+    font-size: 14px;
+line-height: 17px;
+}
+.subscribe-button {
+padding: 7px 8px;
+background: #F16D7F;
+border: none; 
+border-top-right-radius: 25px;
+color: #FFFFFF;
+font-size: 14px;
+line-height: 17px;
+}
+.footer {
+    background-color: #222224;
+}
